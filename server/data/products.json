@@ -1,0 +1,102 @@
+{
+  "ids": [
+    "item1000",
+    "item1001",
+    "item1002",
+    "item1003",
+    "item1004",
+    "item1005",
+    "item1006",
+    "item1007",
+    "item1008",
+    "item1009",
+    "item1010",
+    "item1011",
+    "item1012",
+    "item1013",
+    "item1014",
+    "item1015"
+  ],
+  "entities": {
+    "item1000": {
+      "id": "item1000",
+      "categoryId": "agd",
+      "name": "Pralka Samsung WD80 J5A10 AW"
+    },
+    "item1001": {
+      "id": "item1001",
+      "categoryId": "agd",
+      "name": "Pralka ELECTROLUX EWS11052NDU"
+    },
+    "item1002": {
+      "id": "item1002",
+      "categoryId": "agd",
+      "name": "Pralka Bosch WLG24261PL"
+    },
+    "item1003": {
+      "id": "item1003",
+      "categoryId": "dzieci",
+      "name": "Monopoly Reprezentacja Polski PZPN"
+    },
+    "item1004": {
+      "id": "item1004",
+      "categoryId": "dzieci",
+      "name": "Meteor Hulajnoga CITY"
+    },
+    "item1005": {
+      "id": "item1005",
+      "categoryId": "dzieci",
+      "name": "Razor USA LLC Hulajnoga elektryczna E90 Power Core"
+    },
+    "item1006": {
+      "id": "item1006",
+      "categoryId": "fotografia",
+      "name": "Canon Powershot SX620 HS"
+    },
+    "item1007": {
+      "id": "item1007",
+      "categoryId": "sport",
+      "name": "Rower Kellys Avenue 20 2017"
+    },
+    "item1008": {
+      "id": "item1008",
+      "categoryId": "fotografia",
+      "name": "Sony DSC-RX100"
+    },
+    "item1009": {
+      "id": "item1009",
+      "categoryId": "elektronika",
+      "name": "Microsoft Wireless Desktop 900"
+    },
+    "item1010": {
+      "id": "item1010",
+      "categoryId": "elektronika",
+      "name": "Xiaomi Redmi Note 5"
+    },
+    "item1011": {
+      "id": "item1011",
+      "categoryId": "elektronika",
+      "name": "Tesla 500 i7-8700/GTX1060/16GB/240GB+1TB/WX"
+    },
+    "item1012": {
+      "id": "item1012",
+      "categoryId": "elektronika",
+      "name": "Samsung 250GB 2,5'' SATA SSD 860 EVO"
+    },
+    "item1013": {
+      "id": "item1013",
+      "categoryId": "elektronika",
+      "name": "SanDisk 64GB Ultra Fit"
+    },
+    "item1014": {
+      "id": "item1014",
+      "categoryId": "dom",
+      "name": "Lampa wisząca SFERIO WHITE"
+    },
+    "item1015": {
+      "id": "item1015",
+      "categoryId": "moda",
+      "name": "Buty sportowe damskie NEW BALANCE WL574POP"
+    }
+  }
+}

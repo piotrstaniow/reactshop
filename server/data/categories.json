@@ -1,0 +1,45 @@
+{
+  "ids": ["agd", "dzieci", "fotografia", "sport", "elektronika", "biuro", "dom", "moda"],
+  "entities": {
+    "agd": {
+      "id": "agd",
+      "name": "Artykuły AGD",
+      "productIds": ["item1000", "item1001", "item1002"]
+    },
+    "dzieci": {
+      "id": "dzieci",
+      "name": "Dla dzieci",
+      "productIds": ["item1003", "item1004", "item1005"]
+    },
+    "sport": {
+      "id": "sport",
+      "name": "Sport",
+      "productIds": ["item1007"]
+    },
+    "fotografia": {
+      "id": "fotografia",
+      "name": "Fotografia",
+      "productIds": ["item1006", "item1008"]
+    },
+    "elektronika": {
+      "id": "elektronika",
+      "name": "Elektronika",
+      "productIds": ["item1009", "item1010", "item1011", "item1012", "item1013"]
+    },
+    "biuro": {
+      "id": "biuro",
+      "name": "Do biura",
+      "productIds": []
+    },
+    "dom": {
+      "id": "dom",
+      "name": "Dla domu",
+      "productIds": ["item1014"]
+    },
+    "moda": {
+      "id": "moda",
+      "name": "Moda",
+      "productIds": ["item1015"]
+    }
+  }
+}
