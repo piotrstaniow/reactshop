@@ -10,9 +10,20 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">ReactShop</h1>
         </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <div className="category-grid">
+            <div className="category-item">
+                Category 1
+            </div>
+            <div className="category-item">
+                Category 2
+            </div>
+            <div className="category-item">
+                Category 3
+            </div>
+            <div className="category-item">
+                Category 4
+            </div>
+        </div>
       </div>
     );
   }

@@ -7,6 +7,17 @@ are taken to create this app.
 
 ## Development
 
+### Step 2 - Extracting Components. Components props.
+
+- Create a `CategoryItem` component that will render the same `div` as 
+  previously was used inside the container
+- Render a property called `name` within the div
+- Use the component in `App.js` inside existing `div.category-grid` container
+- Create a `CategoryGrid` component
+- Assume the component accepts `categories` array as property. Use `map` method
+  to produce multiple `CategoryItem`s within render method
+- Use the component in `App`
+
 ### Step 1 - Warm up
 Our first goal is to create a Homepage that a user will see when
 visiting our shop. It will display the page layout and categories
