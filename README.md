@@ -7,6 +7,21 @@ are taken to create this app.
 
 ## Development
 
+### Step 4 - lifecycle hooks, fetching from API
+React components can have various methods that will be called by the library
+in various moments of component lifecycle. We'll use them to fetch data 
+from the API. Some of them are: `componentDidMount`, `componentShouldUpdate`,
+`componentDidUpdate`, `componentWillUnmount` and `componentDidCatch`.
+
+- Check what the API returns at [http://localhost:3001/categories](`http://localhost:3001/categories`).
+- Clear the initial state in `CategoryGrid`.
+- Declare `componentDidMount` method in the component. Refer to browsers' native
+  [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) to
+  fetch data from the server.
+- When data is successfully fetched, update the state with `this.setState`
+  method.
+ 
+
 ### Step 3 - Component state
 In this step we're introducing component state
 
@@ -45,6 +60,7 @@ available for shopping.
   Add `div` container and some `div` elements inside it. You can use 
   `category-grid` and `category-item` classes that already have some CSS styles
   assigned. Add a few categories.
+ 
 
 ### Step 0
 The initial application was bootstrapped with `create-react-app`
