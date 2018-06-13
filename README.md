@@ -7,6 +7,13 @@ are taken to create this app.
 
 ## Development
 
+### Exercise 1 - Writing container components
+
+- Create `CategoryLayout` component.
+- Render a div inside it
+- Move rendering `CategoryGrid` from the `App` component to `CategoryLayout`
+- Render `CategoryLayout` inside `App`.
+
 ### Step 2 - Extracting Components. Components props.
 
 - Create a `CategoryItem` component that will render the same `div` as 
