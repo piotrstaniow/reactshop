@@ -7,6 +7,15 @@ are taken to create this app.
 
 ## Development
 
+### Step 5 - Functional components
+For a dumb component that only accept props and render html we may
+simplify our code using _functional components_. They do not have their state
+nor lifecycle hooks. 
+
+- Extract `header` from `App.js` as a functional component
+- Refactor `CategoryItem` to be function that accepts `props` object and
+  returns rendered HTML
+
 ### Step 4 - lifecycle hooks, fetching from API
 React components can have various methods that will be called by the library
 in various moments of component lifecycle. We'll use them to fetch data 
