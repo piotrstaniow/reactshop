@@ -7,6 +7,34 @@ are taken to create this app.
 
 ## Development
 
+### Step 7 - Declarative Routing
+
+- Run `npm install --save react-router-dom`
+- In the `App` component import `BrowserRouter` and `Route` from the package.
+- Wrap the `App` contents with a router:
+
+  ```
+    <BrowserRouter>
+      ...
+      <Route path="/" component={CategoryLayout}/> {/* Matches path beginning with `/` */}
+      ...
+    </BrowserRouter>
+  ```
+- Modify `CategoryLayout`: wrap `CategoryGrid` so that appropriate component is shown
+  on the matching URL:
+  ```
+    <React.Fragment>
+      <Route exact path="/" component={CategoryGrid} />
+      <CategoryDetails category={this.category} />
+    </React.Fragment>
+  ```
+
+- Check these two URLs: 
+  * [http://localhost:3000/](http://localhost:3000/)
+  * [http://localhost:3000/category/5](http://localhost:3000/category/5)
+  
+  Ensure that `CategoryGrid` is only shown on the former.
+
 ### Exercise 3 - Manipulating state, fetching from API
 - Add initial state to `CategoryDetails` - it will store data about products
 - Add `loading` property to the state, default it to the true. Ensure that 
