@@ -7,6 +7,18 @@ are taken to create this app.
 
 ## Development
 
+### Step 6 - Events handling
+Event handling in React is similar to that in HTML. However, the attributes 
+are all the same but written in camelcase and we're passing a function 
+reference to them. 
+
+- `CategoryItem` is now a _dumb component_, meaning all the business logic goes
+  to some _smart component_ above it, like `CategoryGrid`. Prepare a method of 
+  `CategoryGrid` and pass it to `CategoryItem` as a prop - it'll handle click
+  on the item.
+- Within `CategoryItem` use `onClick` to handle clicking event to the rendered
+  div. Pass the function received in the props.
+
 ### Step 5 - Functional components
 For a dumb component that only accept props and render html we may
 simplify our code using _functional components_. They do not have their state
