@@ -7,6 +7,28 @@ are taken to create this app.
 
 ## Development
 
+### Exercise 2 - Writing components
+- Create `CategoryDetails` class component. It should to inherit from 
+  `React.Component`.
+- Define a `category` member in `CategoryLayout`. Render `CategoryDetails`
+  here and pass the category to it as a property.
+- Assign one of the entities that can be found in the API 
+  [http://localhost:3001/categories](`http://localhost:3001/categories`)
+  to the `category` member (hard code the value).
+- Render the `CategoryDetails` component using following template - 
+  fill it with the actual values:
+
+    ```
+    <div className="category-details">
+      <h1>[Category name]</h1>
+      <ul>
+        <li>[product-0]</li> {/* These are products' ids */}
+        <li>[product-1]</li> {/* List is generated dynamically */} 
+        <li>[product-2]</li>
+      </ul>
+    </div> 
+    ```
+
 ### Step 6 - Events handling
 Event handling in React is similar to that in HTML. However, the attributes 
 are all the same but written in camelcase and we're passing a function 
