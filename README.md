@@ -7,6 +7,16 @@ are taken to create this app.
 
 ## Development
 
+### Exercise 3 - Manipulating state, fetching from API
+- Add initial state to `CategoryDetails` - it will store data about products
+- Add `loading` property to the state, default it to the true. Ensure that 
+  you're not attempting to render products when `loading` is true (display 
+  a nice message instead) 
+- Component `CategoryDetails` should fetch products to display.
+  Make a call to [Products API](`http://localhost:3001/products`) and store 
+  the response. Update state with `loading: false`.
+- Update the template to render actual products' names instead of ids
+
 ### Exercise 2 - Writing components
 - Create `CategoryDetails` class component. It should to inherit from 
   `React.Component`.
