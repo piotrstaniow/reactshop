@@ -7,6 +7,28 @@ are taken to create this app.
 
 ## Development
 
+### Step 8 - Lifting state
+Notice that now there are two places where we would need information about
+categories. Those places (URLs `/` and `/category/:id`) can be visited 
+independently so they both would need to make a request to the API.
+However, we may decide to make a single call in parent component - 
+`CategoryLayout`.
+
+- Lift the `categories` state from `CategoryGrid` to `CategoryLayout`,
+  move the fetching logic.
+- Now `CategoryGrid` needs to receive `categories` from `CategoryLayout` state
+  via props. To achieve that, replace `component` in appropriate `Route` with
+  `render`. The `render` property of `Route` expects a function in form:
+  `(props: Object) => React.Element`. 
+- Modify `CategoryGrid` to render `categories` from props
+- Update analogously the `Route` for `CategoryDetails` component. 
+  Observe, that function in `<Route render` will be called with props
+  with URL metadata like `props.match.params.id` that comes from the URL
+  (`/categories/:id`). Use it to pass appropriate category to `CategoryDetails`.
+- Ensure that both `CategoryGrid` and `CategoryDetails` rely on data received
+  in props. Edge case: there's a moment before data is fetched 
+  (use loading pattern).
+
 ### Step 7 - Declarative Routing
 
 - Run `npm install --save react-router-dom`
