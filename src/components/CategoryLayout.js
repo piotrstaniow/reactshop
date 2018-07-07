@@ -4,16 +4,29 @@ import CategoryDetails from "./CategoryDetails";
 import { Route } from "react-router-dom";
 
 class CategoryLayout extends React.Component {
-    category = {
-        "id": "agd",
-        "productIds": ["item1000", "item1001", "item1002"]
+    state = {
+        categories: {},
+        loading: true,
     };
 
+    componentDidMount() {
+        fetch('http://localhost:3001/categories')
+            .then(response => response.json())
+            .then(json => this.setState({ categories: json, loading: false }));
+    }
+
     render() {
+        const { loading, categories } = this.state;
+        if (loading) {
+            return <span>Loading...</span>
+        }
         return (
             <React.Fragment>
-                <Route exact path="/" component={CategoryGrid} />
-                <CategoryDetails category={this.category} />
+                <Route exact path="/" render={() => <CategoryGrid categories={categories}/>}/>
+                <Route
+                    path="/category/:id"
+                    render={(props) => <CategoryDetails category={categories.entities[props.match.params.id]}/>}
+                />
             </React.Fragment>
         );
     }
