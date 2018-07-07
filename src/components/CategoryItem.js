@@ -1,7 +1,12 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 
-export const CategoryItem = ({name, handleClick}) => (
-    <div className="category-item" onClick={handleClick}>{name}</div>
+export const CategoryItem = ({id, name}) => (
+    <div className="category-item">
+        <Link to={`/category/${id}`}>
+            {name}
+        </Link>
+    </div>
 );
 
 export default CategoryItem;
